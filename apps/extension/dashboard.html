@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PoE2 My Watch Dashboard</title>
+    <link rel="stylesheet" href="src/dashboard/dashboard.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <h1>PoE2 My Watch</h1>
+          <p id="app-description" data-i18n-text="appDescription"></p>
+        </div>
+        <div class="actions">
+          <label class="global-name-setting" for="trade-page-watch-name">
+            <input id="trade-page-watch-name" type="checkbox" checked>
+            <span id="trade-page-watch-name-label" data-i18n-text="tradePageWatchNameSetting"></span>
+          </label>
+          <button id="refresh" type="button" data-i18n-text="refresh"></button>
+        </div>
+      </header>
+      <p id="notification" class="notification" role="status" aria-live="polite"></p>
+      <section class="layout">
+        <aside class="watch-panel">
+          <h2 id="watch-list-title" data-i18n-text="watch"></h2>
+          <div class="watch-filter-tools">
+            <label id="watch-filter-label" for="watch-filter" data-i18n-text="watchFilterLabel"></label>
+            <input id="watch-filter" type="search" autocomplete="off" aria-controls="watch-list" data-i18n-placeholder="watchFilterPlaceholder">
+            <div class="watch-filter-summary">
+              <span id="watch-filter-count" aria-live="polite"></span>
+              <button id="clear-watch-filter" type="button" hidden data-i18n-text="clearFilter" data-i18n-aria-label="clearFilterLabel"></button>
+            </div>
+          </div>
+          <div id="watch-list" class="watch-list"></div>
+        </aside>
+        <section id="watch-detail" class="detail-panel empty">
+          <span data-i18n-text="emptyWatchDetail"></span>
+        </section>
+      </section>
+    </main>
+    <script type="module" src="src/dashboard/dashboard.js"></script>
+  </body>
+</html>

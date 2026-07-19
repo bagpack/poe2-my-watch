@@ -1,0 +1,377 @@
+:root {
+  color-scheme: light;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1f2328;
+}
+
+body {
+  margin: 0;
+  width: 420px;
+  min-height: 520px;
+  background: #f6f7f9;
+}
+
+.notification:not(:empty),
+.chart-warning {
+  margin: 8px 0;
+  color: #8a4600;
+  font-size: 12px;
+}
+
+.notification[role="alert"]:not(:empty) {
+  border: 1px solid #d1242f;
+  border-radius: 6px;
+  padding: 8px;
+  color: #b42318;
+  background: #fff2f0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+main {
+  padding: 14px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.global-name-setting {
+  display: flex;
+  min-height: 36px;
+  align-items: center;
+  gap: 8px;
+  margin: -4px 0 10px;
+  color: #59636e;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.global-name-setting input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 13px;
+}
+
+button {
+  border: 1px solid #c8d0d8;
+  background: #fff;
+  border-radius: 6px;
+  padding: 7px 9px;
+  cursor: pointer;
+  transition: transform 80ms ease, background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+}
+
+button:hover:not(:disabled) {
+  border-color: #8c959f;
+  background: #f6f8fa;
+}
+
+button:active:not(:disabled) {
+  transform: translateY(1px);
+  background: #eaeef2;
+  box-shadow: inset 0 1px 2px rgb(31 35 40 / 18%);
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+button[aria-busy="true"] {
+  border-color: #1f6feb;
+  background: #edf4ff;
+  color: #1f4fbf;
+}
+
+select {
+  border: 1px solid #c8d0d8;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+
+input {
+  box-sizing: border-box;
+  min-width: 0;
+  border: 1px solid #c8d0d8;
+  background: #fff;
+  border-radius: 6px;
+  padding: 7px 8px;
+}
+
+.watch-list-panel {
+  margin-bottom: 12px;
+}
+
+.watch-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.watch-list-header span {
+  color: #59636e;
+  font-size: 12px;
+}
+
+.popup-watch-filter-tools {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.popup-watch-filter-tools input {
+  flex: 1;
+  width: 100%;
+}
+
+.popup-watch-filter-tools button {
+  flex: 0 0 auto;
+  padding: 7px 8px;
+}
+
+.watch-list {
+  display: grid;
+  gap: 8px;
+  max-height: 218px;
+  overflow-y: auto;
+  padding-right: 2px;
+  overscroll-behavior: contain;
+}
+
+.watch-row-shell {
+  display: block;
+}
+
+.watch-row {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  text-align: left;
+}
+
+.watch-row[aria-pressed="true"] {
+  border-color: #1f6feb;
+  background: #edf4ff;
+  box-shadow: inset 3px 0 0 #1f6feb;
+}
+
+.watch-row span,
+.metric span,
+.snapshot-time {
+  color: #59636e;
+  font-size: 12px;
+}
+
+.watch-detail {
+  background: #fff;
+  border: 1px solid #d8dee4;
+  border-radius: 8px;
+  padding: 12px;
+  scroll-margin-top: 10px;
+}
+
+.detail-title-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: start;
+  margin-bottom: 8px;
+}
+
+.detail-actions {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.detail-delete {
+  display: inline-flex;
+  width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #b42318;
+}
+
+.delete-icon {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.detail-delete:hover:not(:disabled),
+.detail-delete:focus-visible {
+  border-color: #b42318;
+  background: #fff2f0;
+}
+
+.name-editor {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  max-width: 100%;
+  font-weight: 700;
+}
+
+.trade-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 1px solid #c8d0d8;
+  border-radius: 6px;
+  padding: 0 9px;
+  color: #1f2328;
+  background: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.trade-link:hover {
+  border-color: #8c959f;
+  background: #f6f8fa;
+}
+
+.trade-link:active {
+  transform: translateY(1px);
+  background: #eaeef2;
+  box-shadow: inset 0 1px 2px rgb(31 35 40 / 18%);
+}
+
+.currency-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+  color: #59636e;
+  font-size: 12px;
+}
+
+.currency-control select {
+  min-width: 92px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.metric {
+  border: 1px solid #d8dee4;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.metric strong {
+  display: block;
+}
+
+.median-chart {
+  margin-top: 8px;
+}
+
+.median-chart svg {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 1px solid #d8dee4;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.median-chart .axis {
+  stroke: #d8dee4;
+  stroke-width: 1;
+}
+
+.median-chart .y-tick line {
+  stroke: #eef1f4;
+  stroke-width: 1;
+}
+
+.median-chart .y-tick text {
+  fill: #59636e;
+  font-size: 10px;
+  text-anchor: end;
+}
+
+.median-chart polyline {
+  fill: none;
+  stroke: #1f6feb;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.median-chart circle {
+  fill: #fff;
+  stroke: #1f6feb;
+  stroke-width: 2;
+}
+
+.chart-summary {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 6px;
+  margin-top: 6px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.chart-summary span {
+  color: #59636e;
+}
+
+.chart-summary span:last-child {
+  text-align: right;
+}
+
+.empty {
+  color: #59636e;
+}

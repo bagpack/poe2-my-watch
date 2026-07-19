@@ -1,0 +1,14 @@
+{
+  "name": "poe2-my-watch",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/extension"
+  ],
+  "scripts": {
+    "package:extension": "node scripts/package-extension.js",
+    "test": "node --test",
+    "syntaxcheck": "node scripts/check-syntax.js"
+  }
+}

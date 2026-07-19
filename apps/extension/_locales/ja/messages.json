@@ -1,0 +1,286 @@
+{
+  "appName": {
+    "message": "PoE2 My Watch"
+  },
+  "appDescriptionManifest": {
+    "message": "Path of Exile 2公式トレード検索リンクを保存・整理し、必要なときに開き直せます。"
+  },
+  "appDescription": {
+    "message": "Path of Exile 2公式トレード検索リンクを保存・整理し、必要なときに開き直せます。"
+  },
+  "auto": {
+    "message": "自動"
+  },
+  "boxPlotAria": {
+    "message": "価格分布推移。X軸は時系列、Y軸は価格です。"
+  },
+  "boxPlotBox": {
+    "message": "箱: p10-p90"
+  },
+  "boxPlotMedian": {
+    "message": "中央線: 中央値"
+  },
+  "boxPlotPaidCount": {
+    "message": "n: 価格付き件数"
+  },
+  "boxPlotWhisker": {
+    "message": "ひげ: min-max"
+  },
+  "chartUnavailable": {
+    "message": "この表示通貨で描画できる価格履歴がありません。"
+  },
+  "clearFilter": {
+    "message": "クリア"
+  },
+  "clearFilterLabel": {
+    "message": "watchの絞り込みをクリア"
+  },
+  "chartOmitted": {
+    "message": "換算できない履歴 $count$ 件はグラフから除外しています。",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "chartTime": {
+    "message": "記録時刻"
+  },
+  "conversionFallback": {
+    "message": "$currency$ 基準: snapshot 内の価格通貨",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "conversionScout": {
+    "message": "ex 換算: POE2 Scout snapshot $sourceEpoch$",
+    "placeholders": {
+      "sourceEpoch": {
+        "content": "$1"
+      }
+    }
+  },
+  "dashboard": {
+    "message": "ダッシュボード"
+  },
+  "deleteConfirm": {
+    "message": "$name$ と保存済み snapshot 履歴を削除しますか？この操作は元に戻せません。",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "deleteWatchLabel": {
+    "message": "$name$ を削除",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "deleteWatchTitle": {
+    "message": "このwatchと履歴を削除"
+  },
+  "displayCurrency": {
+    "message": "表示通貨"
+  },
+  "tradePageWatchNameSetting": {
+    "message": "トレードタブにwatch名を表示"
+  },
+  "emptyWatchDetail": {
+    "message": "watchがまだありません。"
+  },
+  "filterFallbackLabel": {
+    "message": "フィルタ"
+  },
+  "filterFallbackValue": {
+    "message": "ページ上の条件ラベルは取得できませんでした"
+  },
+  "filterNoResults": {
+    "message": "一致するwatchはありません。"
+  },
+  "filtersCount": {
+    "message": "フィルター $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "latestListingSample": {
+    "message": "最新 snapshot の listing sample"
+  },
+  "item": {
+    "message": "アイテム"
+  },
+  "league": {
+    "message": "リーグ"
+  },
+  "latestMedian": {
+    "message": "最新中央値"
+  },
+  "listings": {
+    "message": "listings"
+  },
+  "listingSampleEmpty": {
+    "message": "listing sample がありません。"
+  },
+  "median": {
+    "message": "中央値"
+  },
+  "medianChart": {
+    "message": "中央値推移"
+  },
+  "medianChartAria": {
+    "message": "中央値推移グラフ"
+  },
+  "minPrice": {
+    "message": "最安値"
+  },
+  "maxPrice": {
+    "message": "最高値"
+  },
+  "noHistory": {
+    "message": "保存された価格履歴がありません。"
+  },
+  "noSnapshot": {
+    "message": "snapshot がまだありません。"
+  },
+  "noPricedListings": {
+    "message": "価格を取得できません。結果の読み込み後に再試行してください"
+  },
+  "openDashboard": {
+    "message": "ダッシュボードを開く"
+  },
+  "operationFailed": {
+    "message": "操作に失敗しました。更新して再試行してください。"
+  },
+  "position": {
+    "message": "表示順"
+  },
+  "queryId": {
+    "message": "検索ID"
+  },
+  "openTrade": {
+    "message": "公式検索"
+  },
+  "openTradeTitle": {
+    "message": "公式トレード検索を開く"
+  },
+  "paidListings": {
+    "message": "価格付き"
+  },
+  "priceAxis": {
+    "message": "価格"
+  },
+  "priceHistory": {
+    "message": "価格分布推移"
+  },
+  "rawPrice": {
+    "message": "表示価格"
+  },
+  "refresh": {
+    "message": "更新"
+  },
+  "refreshing": {
+    "message": "更新中..."
+  },
+  "refreshDone": {
+    "message": "更新しました"
+  },
+  "refreshFailed": {
+    "message": "更新失敗"
+  },
+  "reloadPage": {
+    "message": "ページを再読み込み"
+  },
+  "saveFailed": {
+    "message": "保存失敗: $message$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "saved": {
+    "message": "保存済み $priced$/$total$",
+    "placeholders": {
+      "priced": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "watchSaved": {
+    "message": "watchを保存しました（価格snapshotなし）。"
+  },
+  "saveWatch": {
+    "message": "watch保存"
+  },
+  "saving": {
+    "message": "保存中..."
+  },
+  "snapshotNone": {
+    "message": "snapshot なし"
+  },
+  "snapshot": {
+    "message": "スナップショット"
+  },
+  "tradeDisplay": {
+    "message": "$currency$ 表示",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "watchAddHint": {
+    "message": "公式トレード検索ページのwatch保存から追加してください。"
+  },
+  "watchChangedError": {
+    "message": "このwatchは別画面で変更されました。更新して最新状態を読み込んでください。"
+  },
+  "watchCount": {
+    "message": "$count$ 件",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "watchFilterCount": {
+    "message": "$visible$ / $total$ 件",
+    "placeholders": {
+      "visible": { "content": "$1" },
+      "total": { "content": "$2" }
+    }
+  },
+  "watchFilterLabel": {
+    "message": "watch名で絞り込み"
+  },
+  "watchFilterPlaceholder": {
+    "message": "watch名"
+  },
+  "watch": {
+    "message": "watch"
+  },
+  "watchDeleted": {
+    "message": "$name$ を削除しました。",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "watchNameLabel": {
+    "message": "watch名"
+  },
+  "xAxisTime": {
+    "message": "時系列"
+  },
+  "yAxis": {
+    "message": "Y軸: $currency$",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "appName": {
+    "message": "PoE2 My Watch"
+  },
+  "appDescriptionManifest": {
+    "message": "Save, organize, and reopen official Path of Exile 2 trade search links."
+  },
+  "appDescription": {
+    "message": "Save, organize, and reopen official Path of Exile 2 trade search links."
+  },
+  "auto": {
+    "message": "Auto"
+  },
+  "boxPlotAria": {
+    "message": "Price distribution history. X axis is time, Y axis is price."
+  },
+  "boxPlotBox": {
+    "message": "Box: p10-p90"
+  },
+  "boxPlotMedian": {
+    "message": "Median line"
+  },
+  "boxPlotPaidCount": {
+    "message": "n: priced listings"
+  },
+  "boxPlotWhisker": {
+    "message": "Whisker: min-max"
+  },
+  "chartUnavailable": {
+    "message": "No price history can be drawn for this display currency."
+  },
+  "clearFilter": {
+    "message": "Clear"
+  },
+  "clearFilterLabel": {
+    "message": "Clear watch filter"
+  },
+  "chartOmitted": {
+    "message": "$count$ history points could not be converted and are omitted.",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "chartTime": {
+    "message": "Captured at"
+  },
+  "conversionFallback": {
+    "message": "$currency$ base: price currency in this snapshot",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "conversionScout": {
+    "message": "ex conversion: POE2 Scout snapshot $sourceEpoch$",
+    "placeholders": {
+      "sourceEpoch": {
+        "content": "$1"
+      }
+    }
+  },
+  "dashboard": {
+    "message": "Dashboard"
+  },
+  "deleteConfirm": {
+    "message": "Delete $name$ and its saved snapshot history? This cannot be undone.",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "deleteWatchLabel": {
+    "message": "Delete $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "deleteWatchTitle": {
+    "message": "Delete this watch and its history"
+  },
+  "displayCurrency": {
+    "message": "Display currency"
+  },
+  "tradePageWatchNameSetting": {
+    "message": "Use watch names on trade tabs"
+  },
+  "emptyWatchDetail": {
+    "message": "No watches yet."
+  },
+  "filterFallbackLabel": {
+    "message": "Filter"
+  },
+  "filterFallbackValue": {
+    "message": "Could not read filter labels from the page"
+  },
+  "filterNoResults": {
+    "message": "No watches match this filter."
+  },
+  "filtersCount": {
+    "message": "Filters $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "latestListingSample": {
+    "message": "Latest snapshot listing sample"
+  },
+  "item": {
+    "message": "Item"
+  },
+  "league": {
+    "message": "League"
+  },
+  "latestMedian": {
+    "message": "Latest median"
+  },
+  "listings": {
+    "message": "listings"
+  },
+  "listingSampleEmpty": {
+    "message": "No listing sample."
+  },
+  "median": {
+    "message": "Median"
+  },
+  "medianChart": {
+    "message": "Median history"
+  },
+  "medianChartAria": {
+    "message": "Median history chart"
+  },
+  "minPrice": {
+    "message": "Min price"
+  },
+  "maxPrice": {
+    "message": "Max price"
+  },
+  "noHistory": {
+    "message": "No saved price history."
+  },
+  "noSnapshot": {
+    "message": "No snapshot yet."
+  },
+  "noPricedListings": {
+    "message": "No prices found. Wait for results to load and try again"
+  },
+  "openDashboard": {
+    "message": "Open dashboard"
+  },
+  "operationFailed": {
+    "message": "The operation failed. Refresh and try again."
+  },
+  "position": {
+    "message": "Position"
+  },
+  "queryId": {
+    "message": "Query ID"
+  },
+  "openTrade": {
+    "message": "Trade search"
+  },
+  "openTradeTitle": {
+    "message": "Open official trade search"
+  },
+  "paidListings": {
+    "message": "Priced"
+  },
+  "priceAxis": {
+    "message": "Price"
+  },
+  "priceHistory": {
+    "message": "Price distribution history"
+  },
+  "rawPrice": {
+    "message": "Listed price"
+  },
+  "refresh": {
+    "message": "Refresh"
+  },
+  "refreshing": {
+    "message": "Refreshing..."
+  },
+  "refreshDone": {
+    "message": "Refreshed"
+  },
+  "refreshFailed": {
+    "message": "Refresh failed"
+  },
+  "reloadPage": {
+    "message": "Reload page"
+  },
+  "saveFailed": {
+    "message": "Save failed: $message$",
+    "placeholders": {
+      "message": {
+        "content": "$1"
+      }
+    }
+  },
+  "saved": {
+    "message": "Saved $priced$/$total$",
+    "placeholders": {
+      "priced": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "watchSaved": {
+    "message": "Watch saved; no price snapshot."
+  },
+  "saveWatch": {
+    "message": "Save watch"
+  },
+  "saving": {
+    "message": "Saving..."
+  },
+  "snapshotNone": {
+    "message": "No snapshot"
+  },
+  "snapshot": {
+    "message": "Snapshot"
+  },
+  "tradeDisplay": {
+    "message": "$currency$ display",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  },
+  "watchAddHint": {
+    "message": "Add a watch from Save watch on an official trade search page."
+  },
+  "watchChangedError": {
+    "message": "This watch changed in another view. Refresh to load the latest state."
+  },
+  "watchCount": {
+    "message": "$count$ watches",
+    "placeholders": { "count": { "content": "$1" } }
+  },
+  "watchFilterCount": {
+    "message": "$visible$ / $total$ watches",
+    "placeholders": {
+      "visible": { "content": "$1" },
+      "total": { "content": "$2" }
+    }
+  },
+  "watchFilterLabel": {
+    "message": "Filter watches by name"
+  },
+  "watchFilterPlaceholder": {
+    "message": "Watch name"
+  },
+  "watch": {
+    "message": "Watch"
+  },
+  "watchDeleted": {
+    "message": "Deleted $name$.",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "watchNameLabel": {
+    "message": "Watch name"
+  },
+  "xAxisTime": {
+    "message": "Time"
+  },
+  "yAxis": {
+    "message": "Y axis: $currency$",
+    "placeholders": {
+      "currency": {
+        "content": "$1"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "version": "0.1.0",
+  "default_locale": "en",
+  "description": "__MSG_appDescriptionManifest__",
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.pathofexile.com/*",
+    "https://poe2scout.com/api/*"
+  ],
+  "background": {
+    "service_worker": "src/background/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "__MSG_appName__",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "32": "assets/icon32.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.pathofexile.com/trade2*"
+      ],
+      "js": [
+        "src/capture/page-fetch-hook.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://*.pathofexile.com/trade2*"
+      ],
+      "js": [
+        "src/capture/save-button-state.js",
+        "src/capture/content-script.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/capture/extractor.js",
+        "src/capture/capture-response-request.js",
+        "src/capture/title-observer.js",
+        "src/shared/trade-page-title.js",
+        "src/shared/watch-key.js",
+        "src/shared/trade-url.js"
+      ],
+      "matches": [
+        "https://*.pathofexile.com/*"
+      ]
+    }
+  ]
+}

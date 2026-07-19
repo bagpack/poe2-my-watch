@@ -1,0 +1,26 @@
+{
+  "name": "poe2-my-watch",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:4": {}
+  },
+  "runArgs": [
+    "--privileged"
+  ],
+  "remoteUser": "node",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "postCreateCommand": "node --version && npm --version",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "files.eol": "\n"
+      }
+    }
+  }
+}

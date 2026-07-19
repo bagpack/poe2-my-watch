@@ -1,0 +1,9 @@
+.git
+.agent
+.codex
+.devcontainer
+dist
+node_modules
+coverage
+tmp
+temp

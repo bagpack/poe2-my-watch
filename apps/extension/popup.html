@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PoE2 My Watch</title>
+    <link rel="stylesheet" href="src/popup/popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>PoE2 My Watch</h1>
+        <div class="actions">
+          <button id="open-dashboard" data-i18n-text="dashboard" data-i18n-title="openDashboard"></button>
+          <button id="refresh" data-i18n-title="refresh" data-i18n-aria-label="refresh">↻</button>
+        </div>
+      </header>
+      <label class="global-name-setting" for="trade-page-watch-name">
+        <input id="trade-page-watch-name" type="checkbox" checked>
+        <span id="trade-page-watch-name-label" data-i18n-text="tradePageWatchNameSetting"></span>
+      </label>
+      <p id="notification" class="notification" role="status" aria-live="polite"></p>
+      <section class="watch-list-panel" aria-labelledby="watch-list-title">
+        <div class="watch-list-header">
+          <h2 id="watch-list-title" data-i18n-text="watch"></h2>
+          <span id="watch-count" aria-live="polite"></span>
+        </div>
+        <div id="popup-watch-filter-tools" class="popup-watch-filter-tools" hidden>
+          <label id="popup-watch-filter-label" class="visually-hidden" for="popup-watch-filter" data-i18n-text="watchFilterLabel"></label>
+          <input id="popup-watch-filter" type="search" autocomplete="off" aria-controls="watch-list" data-i18n-placeholder="watchFilterPlaceholder">
+          <button id="clear-popup-watch-filter" type="button" hidden data-i18n-text="clearFilter" data-i18n-aria-label="clearFilterLabel"></button>
+        </div>
+        <div id="watch-list" class="watch-list"></div>
+      </section>
+      <section id="watch-detail" class="watch-detail empty" data-i18n-text="emptyWatchDetail"></section>
+    </main>
+    <script type="module" src="src/popup/popup.js"></script>
+  </body>
+</html>
